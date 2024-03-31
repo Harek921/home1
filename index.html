@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:margin-bottom="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Basics</title>
-  <link rel="stylesheet" href="style.css">
+  <title>HTML Basics Vladislav Nikishyn</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -12,12 +12,159 @@
     <div id="main">
       <div id="container">
         <div id="content" role="main">
-          <p>This is new text</p>
-          <h1>This is newaya wolna kurva</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+          <h1>HTML Elements</h1>
+          <hr>
+          <strong><a href="https://github.com/Harek921/home1">Home</a></strong> &nbsp&nbsp
+          <strong><a href="https://github.com/Harek921/home1">Headers</a></strong> &nbsp&nbsp
+          <strong><a href="https://github.com/Harek921/home1">Table</a></strong> &nbsp&nbsp
+          <strong><a href="https://github.com/Harek921/home1">List</a></strong> &nbsp&nbsp
+          <strong><a href="https://github.com/Harek921/home1">Text Formats</a></strong> &nbsp&nbsp
+          <strong><a href="https://github.com/Harek921/home1">Blockquotes</a></strong> &nbsp&nbsp
+          <hr>
+          <p>Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, becase we have to use only one h1 on the page, and it is commonly used inside header</p>
 
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, <a href="https://github.com/Harek921/home1">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convalis est. Quisque aliqam.<i>This is emphasized. </i>Donec faucibs. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at tincidnt nec, gravida vehicula, nisl. <i>The New York Times</i><! -- Не могу разлечить, тут вставлять шрифт или курсив? --> (That's a citation). <u>Underline.</u> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonmmy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus</p>
+
+          <p><style>
+            .term {
+              border-bottom: 1px dotted black; /* Параметры линии */
+            }
+          </style>
+          <p><span class="term" title="Гипертекстовый документ">HTML</span> and <span class="term" title="Гипертекстовый документ">CSS</span> are our tools. Maris a ante. Suspendisse quam sem, consequat at, commodo vitae, fegiat in, nunc. Morbi imperdiet augue quis tellus, Praesent mattis, massa quis luctos fermentu,m tupris mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type COPY <i>filename.</i> <s>Dinner's at 5:00.</s> <mark>Let's make that 7.</mark> This <s>test</s> has been struck.</p>
+          <hr>
+
+          <h2>Table</h2>
+
+          <table>
+          <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+          <tr>
+            <td>Lviv</td>
+            <td>Kyiv</td>
+            <td>Kharkiv</td>
+          </tr>
+          <tr>
+            <td>Odessa</td>
+            <td>Zhytomyr</td>
+            <td>Dnipropetrovsk</td>
+          </tr>
+          <tr>
+            <td>Summy</td>
+            <td>Chernivtsi</td>
+            <td>Lutsk</td>
+          </tr>
+          </table>
+
+          <h2>Unordered List</h2>
+
+            <ul>
+                <li>List item1
+                    <li> List item 2
+                    <ul>
+                        <li>Some nested list item 1</li>
+                    </ul>
+                </li>
+                <li>List item 3</li>
+            </ul>
+            <h2>Order List</h2>
+            <ol>
+                <li>List item1
+                <li> List item 2
+                    <ul>
+                        <li type="A">Some nested list item 1</li>
+                    </ul>
+                </li>
+                <li>List item 3</li>
+            </ol>
+
+          &nbsp&nbsp&nbsp&nbsp
+
+
+          <h2>Definition List</h2>
+          <dl>
+            <dt>defines terms 1</dt>
+            <dd>description 1</dd>
+
+            <dt>defines terms 2</dt>
+            <dd>description 2</dd>
+          </dl>
+
+
+          <p>Details</p> <style>
+            details > summary {
+              padding: 4px;
+              width: 50px;
+              background-color: #eeeeee;
+              border: none;
+              box-shadow: 1px 1px 2px #bbbbbb;
+              cursor: pointer;
+            }
+
+          </style>
+                   <details>
+            <summary>HTML</summary>
+            <p>Harek921 open new text</p>
+          </details>
+<hr>
+          &nbsp&nbsp&nbsp&nbsp
+          <h2>Text formats</h2>
+          <p>Article Text</p>
+          <article>
+            <h2>Article title</h2>
+            <p>Article description</p>
+          </article>
+
+          <h3>Preformatted Text</h3>
+          <pre>Text
+            in a <b>pre</b> elemt
+            is desplayed in a fixed-width
+          font, nad it preserves
+          both              spaced and
+                 line breaks</pre>
+          <h3>Code</h3>
+          <pre>
+            .wrapper {
+               display: flex;
+               vertical-align: middle;
+               justify-content: center;
+              }</pre>
+
+          <h3>Preformatted Text</h3>
+          <p> Let's keep it simple. Italics are good to help set it off from the body text. Be sre to style the catation.</p>
+          <blockquote>
+            "If yo go back a few hndred years, what we take or granted today would seem like magic-being able to talk to
+            people over long distances, to transmit images, flying, accessing vast amounts of data like an aracle. These are all
+            things that would have been considered magic a few hundred years ago."
+            <a href="https://twitter.com/elonmusk">Elon Musk</a>
+          </blockquote>
+          <hr>
+
+            <fieldset>
+                <label class="alignright">Surname:<input type="text" required></label>
+            </fieldset>
+            <fieldset>
+                <label class="alignright">Email:<input type="text" required></label>
+            </fieldset>
+            <fieldset>
+                <label class="alignright">First Name:<input type="text" required></label>
+            </fieldset>
+            <form action="textarea1.php" method="post">
+
+                <p><textarea rows="10" cols="45" name="text"></textarea></p>
+                <p><input type="submit" value="Submit"></p>
+            </form>
+
+            <footer><p>© Copyright Epam Systems</p></footer>
+
+      </div>
+    </body>
 </html>
